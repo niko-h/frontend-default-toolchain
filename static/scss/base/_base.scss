@@ -80,10 +80,11 @@ input[type="text"] { border: 1px solid $black50; }
 
 a { 
 	text-decoration: none;
+  color: $linkcolor;
+  &:hover { 
     color: $hovercolor;
-}
-a:hover { 
-	text-decoration: underline;
+    text-decoration: underline;
+  }
 }
 
 p {

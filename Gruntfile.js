@@ -42,6 +42,9 @@ module.exports = function(grunt) {
             }
         },
 		watch: {
+			grunt: { 
+				files: ['Gruntfile.js'] 
+			},
 			js: {
 				files: ['static/js/**/*.js'],
 				tasks: ['concat:js', 'uglify'],
@@ -50,18 +53,34 @@ module.exports = function(grunt) {
                 files: ['static/scss/**/*.{scss,sass}'],
                 tasks: ['compass:dev']
             },
+            jade: {
+            	files: ['templates/*jade'],
+            	tasks: ['jade:compile']
+            },
+		},
+		jade: {
+			compile: {
+				options: {
+					pretty: true,
+				},
+				files: {
+					'index.html': 'templates/*.jade'
+				}
+			}
 		}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-jade');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.registerTask(
 		'default', [
 			'concat',
             'compass:dist',
 			'uglify',
+			'jade',
 			'watch'
 		]);
 
