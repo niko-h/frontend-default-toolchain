@@ -2,8 +2,27 @@
    FOOTER
    ========================================================================== */
 
-#footer {
-    clear: both;
-    text-align: center; 
-    padding:10px;
-}
+	footer {
+		.copyright, .footer-nav, .footer-nav ul, .footer-nav ul li {
+			display: inline;
+		}
+		.footer-nav {
+			float: right;
+			color: $linkcolor;
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			height: 1px;
+			width: 100%;
+			top: -1px;
+			right: 1000px;
+			background-color: $mediumgrey;
+		}
+
+		position: relative;
+		height: 100px;
+		padding-top: 20px;
+		border-top: 1px solid $mediumgrey;
+	}

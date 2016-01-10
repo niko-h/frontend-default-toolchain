@@ -2,36 +2,22 @@
    menu
    ========================================================================== */
 
-.menu {
-    height: $headerheight;
-    width: 100%;
-    ul {
-      height: $headerheight;
-      list-style-type: none;
-      li {
-        display: inline-block;
-        line-height: $headerheight;
-        margin: 0 1rem;
-        width: 60px;
-        font-size: 0.7rem;
-        @include breakpoint(baby) {
-          &:not(:last-child) {
-            margin: 0 0.4rem;
-          }
-        }
-        a {
-          text-decoration: none;
-          text-transform: uppercase;
-          color: white;
-          line-height: 3rem;
-          display: inline-block;
-          &:hover {
-            color: $hovercolor;
-          }
-          &.active {
-            color: $hovercolor;
-          }
-        }
-      }
-    }
+nav {
+	a {
+		font-family: 'Titillium Web', sans-serif;
+		font-size: 1.2rem;
+		padding: 5px 20px;
+		background: transparent;
+		color: $darkgrey;
+		border: 1px solid transparent;
+		border-radius: 3px;
+		text-transform: uppercase;
+		margin-right: 20px;
+		&.active, &:hover {
+			text-decoration: none;
+			background: $lightgrey;
+			color: $darkgrey;
+			border-color: $darkgrey;
+		}
+	}
 }

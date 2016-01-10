@@ -3,10 +3,78 @@ html
 	head
 		title gjfcs
 		meta(charset="utf-8")
-		meta(name="viewport". content="width=device-width, initial-scale=1")
-		link(rel='stylesheet', href='static/css/foundation.min.css')
+		meta(name="viewport", content="width=device-width, initial-scale=1")
 		link(rel='stylesheet', href='static/css/style.css')
+		link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css')
+		script(type='text/javascript', src='static/js/html5shiv.js')
 
 	body
-		.row
-			.small-3 Logo
+		#maincontainer
+			header
+				.logo 
+					a(href="", title="exozet home")
+						img(alt="exozet logo", src="static/img/exozet_logo.jpg")
+				nav
+					ul
+						li
+							a.active(href="") News
+						li
+							a(href="") Kontakt
+						li
+							a(href="") Impressum
+			#main.row
+				#maincontent.column.column-8
+					article
+						h6 20.02.2012 | 19:02 Uhr
+						h1 Long Headlinetext /
+						p Lorem
+
+					article
+						h1 Formular /
+						p Lorem
+
+					article
+						h1 Leistungsumfang /
+						p Lorem
+
+				#sidebar.column.column-3
+					.module
+						h1 Interne Linkliste
+						ul
+							li
+								a(href="") <i class="fa fa-chevron-right"></i> Link Nummer 1
+							li
+								a(href="") <i class="fa fa-chevron-right"></i> Link Nummer 2
+							li
+								a(href="") <i class="fa fa-chevron-right"></i> Link Nummer 3
+					.module
+						h1 Kontakt
+						address 
+							|Exozet Berlin GmbH <br>
+							|Platz der Luftbrücke 4-6 <br>
+							|12101 Berlin
+						<br>
+						address 
+							| <i class="fa fa-phone"></i> Tel.: +49 (0)30 24 65 60 - 0 <br>
+							| <i class="fa fa-envelope-o"></i> E-Mail: 
+							a(href="mailto:info@exozet.com") info@exozet.com
+						
+					.module
+						h1 Image Teaser
+						.teaser
+							img(alt="image teaser", title="image teaser", src="static/img/imageteaser.jpg")
+							p Es gibt im Moment in diese Mannschaft, oh einige Spieler!
+							a.button(href="") Mehr lesen
+
+			footer
+				.copyright &copy; exozet 2014
+				.footer-nav
+					ul
+						li 
+							a(href="") News
+						li |
+						li
+							a(href="") Kontakt
+						li |
+						li
+							a(href="") Impressum

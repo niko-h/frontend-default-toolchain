@@ -1,0 +1,32 @@
+/* ==========================================================================
+   Sidebar
+   ========================================================================== */
+
+#sidebar {
+	float: right;
+	display: inline;
+	
+	.module {
+		margin-bottom: 30px;
+		h1 {
+			font-family: 'Titillium Web', sans-serif;
+			font-size: 1.2rem;
+			padding-bottom: 5px;
+			margin-bottom: 10px;
+			border-bottom: 1px solid $mediumgrey;
+		}
+
+		.teaser {
+			background-color: $lightgrey;
+			border: 1px solid $mediumgrey;
+			box-sizing: border-box;
+			img {
+				margin-bottom: -5px;
+			}
+			p, .button {
+				display: block;
+				margin: 10px;
+			}
+		}
+	}
+}

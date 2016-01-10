@@ -23,10 +23,11 @@ html, body, div, span, applet, object, iframe, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+address, article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
@@ -55,7 +56,8 @@ blockquote p {
 
 /* base files only alter actual HTML elements.  NO CLASSES HERE (See ../modules) */
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,900,700);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,900,700);
 
 html, body {
     font-size: 100%;
@@ -63,12 +65,12 @@ html, body {
     min-height: 100%;
 }
 
-::-moz-selection { background: $hovercolor; }
-::selection { background: $hovercolor; }
+::-moz-selection { background: $mediumgrey; }
+::selection { background: $mediumgrey; }
 
 body {
   background: $bg;
-  font-size: 100%;
+  font-size: 14px;
   height: 100%;
   font-family: 'Open Sans', Arial, sans-serif;
   line-height: 1.5rem;
