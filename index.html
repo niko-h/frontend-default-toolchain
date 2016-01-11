@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>gjfcs</title>
+    <title>exozet</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="static/css/style.css">
@@ -22,23 +22,63 @@
       </header>
       <div id="main" class="row">
         <div id="maincontent" class="column column-8">
-          <article>
-            <h6>20.02.2012 | 19:02 Uhr</h6>
+          <article><span class="sub">20.02.2012 | 19:02 Uhr</span>
             <h1>Long Headlinetext /</h1>
-            <p>Lorem</p>
+            <p>Es gibt im Moment in diese Mannschaft, oh, einige Spieler vergessen ihnen Profi was sie sind. Ich lese nicht sehr viele Zeitungen, aber ich habe gehört viele Situationen. Erstens: wir haben nicht offensiv gespielt. Es gibt keine deutsche Mannschaft spielt offensiv und die Name offensiv wie Bayern.</p>
+            <p>Letzte Spiel hatten wir in Platz drei Spitzen: Elber, Jancka und dann Zickler. Wir müssen nicht vergessen Zickler. Zickler ist eine Spitzen mehr, Mehmet eh mehr Basler. Ist klar diese Wörter, ist möglich verstehen, was ich hab gesagt? Danke.</p>
+            <figure> 
+              <blockquote>Ein Trainer ist nicht ein Idiot! Ein Trainer sei sehen was passieren in Platz.</blockquote>
+              <footer> - Trapattoni '98</footer>
+            </figure>
+            <p>Offensiv, offensiv ist wie machen wir in Platz. Zweitens: ich habe erklärt mit diese zwei Spieler: nach Dortmund brauchen vielleicht Halbzeit Pause. Ich habe auch andere Mannschaften gesehen in Europa nach diese Mittwoch. Ich habe gesehen auch zwei Tage die Training.</p>
+            <div class="img-left"><img alt="opera" title="opera" src="static/img/image1.jpg"><br><span class="sub">&copy; Lorempixel.com</span></div>
+            <p>Ich habe fertig! . . . wenn es gab Fragen, ich kann Worte wiederholen... Es gibt im Moment in diese Mannschaft, oh, einige Spieler vergessen ihnen Profi was sie sind, Ich lese nicht sehr viele Zeitungen, aber ich habe gehört viele Situationen. Erstens: wir haben nicht offensiv gespielt. Es gibt keine <a href="">deutsche Mannschaft</a> spielt offensiv und die Name offensiv wie Bayern. Letzte Spiel hatten wir in Platz drei Spitzen: Elber, Jancka und dann Zickler. Wir müssen nicht vergessen Zickler. Zickler ist eine Spitzen mehr, Mehmet eh mehr Basler. Ist klar diese Wörter, ist Wörter, ist möglich verstehen, was ich hab gesagt? Danke. Offensiv, offensiv ist wie machen wir in Platz. Zweitens: ich habe erklärt mit diese zwei Spieler: nach Dortmund brauchen vielleicht Halbzeit Pause. Ich habe auch andere Mannschaften gesehen in Europa nach diese Mittwoch.</p>
           </article>
           <article>
-            <h1>Formular /</h1>
-            <p>Lorem</p>
+            <h1 class="underline">Formular /</h1>
+            <form>
+              <div class="form-info">Felder mit einem * sind Pflichtfelder</div>
+              <div class="form-error">Bitte überprüfen Sie Ihre Eingabe</div>
+              <label>Name*
+                <input type="text" required onblur="javascript:textvalidate();" class="form-name">
+              </label>
+              <label>E-Mail*
+                <input type="email" required onblur="javascript:mailvalidate();" class="form-mail">
+              </label>
+              <label>Telefon
+                <input type="number" onblur="javascript:numbervalidate();" class="form-number">
+              </label>
+              <label>Kommentar*
+                <textarea required rows="4" maxlength="500" onblur="javascript:lengthvalidate();" class="form-textarea"></textarea>
+              </label>
+              <input type="submit" value="Abschicken" class="button form-submit">
+            </form>
           </article>
           <article>
-            <h1>Leistungsumfang /</h1>
-            <p>Lorem</p>
+            <h1 class="underline">Leistungsumfang /</h1>
+            <div class="row">
+              <div class="column column-6">
+                <ol>
+                  <li>Lorem</li>
+                  <li>Ipsum</li>
+                  <li>Dolor</li>
+                  <li>Sit</li>
+                </ol>
+              </div>
+              <div class="column column-6">
+                <ul>
+                  <li>Exozet: GmbH</li>
+                  <li>Mitarbeiter ca. 150</li>
+                  <li>Groups: Games, Interact, Effects</li>
+                  <li>Gründung: 1996</li>
+                </ul>
+              </div>
+            </div>
           </article>
         </div>
         <div id="sidebar" class="column column-3">
           <div class="module">
-            <h1>Interne Linkliste</h1>
+            <h2>Interne Linkliste</h2>
             <ul>
               <li><a href=""><i class="fa fa-chevron-right"></i> Link Nummer 1</a></li>
               <li><a href=""><i class="fa fa-chevron-right"></i> Link Nummer 2</a></li>
@@ -46,27 +86,22 @@
             </ul>
           </div>
           <div class="module">
-            <h1>Kontakt</h1>
+            <h2>Kontakt</h2>
             <address>
                
-              Exozet Berlin GmbH <br>
-              Platz der Luftbrücke 4-6 <br>
-              12101 Berlin
+              Exozet Berlin GmbH<br>Platz der Luftbrücke 4-6<br>12101 Berlin
             </address><br>
-            <address>
-               
-              <i class="fa fa-phone"></i> Tel.: +49 (0)30 24 65 60 - 0 <br>
-              <i class="fa fa-envelope-o"></i> E-Mail: <a href="mailto:info@exozet.com">info@exozet.com</a>
-            </address>
+            <address> <i class="fa fa-phone"> Tel.: +49 (0)30 24 65 60 - 0</i><br><i class="fa fa-envelope-o">  E-Mail: </i><a href="mailto:info@exozet.com"> info@exozet.com</a></address>
           </div>
           <div class="module">
-            <h1>Image Teaser</h1>
+            <h2>Image Teaser</h2>
             <div class="teaser"><img alt="image teaser" title="image teaser" src="static/img/imageteaser.jpg">
               <p>Es gibt im Moment in diese Mannschaft, oh einige Spieler!</p><a href="" class="button">Mehr lesen</a>
             </div>
           </div>
         </div>
       </div>
+      <div class="clear"></div>
       <footer>
         <div class="copyright">&copy; exozet 2014</div>
         <div class="footer-nav">
@@ -80,5 +115,7 @@
         </div>
       </footer>
     </div>
+    <script type="text/javascript" src="static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="static/js/master.min.js"></script>
   </body>
 </html>

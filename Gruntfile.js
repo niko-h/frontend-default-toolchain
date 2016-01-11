@@ -11,8 +11,7 @@ module.exports = function(grunt) {
 		uglify: {
 			options: {
 				banner: '/*! This File was created by Nikolaus Höfer - ' +
-						'<%= grunt.template.today("yyyy-mm-dd") %> - '+
-						'It falls under the Wurzel Licence. */\n',
+						'<%= grunt.template.today("yyyy-mm-dd") %> */\n',
 				mangle: true,
 				compress: {
 					drop_console: false // <- ENABLE for production

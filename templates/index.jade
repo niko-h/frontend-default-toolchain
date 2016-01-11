@@ -1,7 +1,7 @@
 doctype html
 html
 	head
-		title gjfcs
+		title exozet
 		meta(charset="utf-8")
 		meta(name="viewport", content="width=device-width, initial-scale=1")
 		link(rel='stylesheet', href='static/css/style.css')
@@ -25,21 +25,54 @@ html
 			#main.row
 				#maincontent.column.column-8
 					article
-						h6 20.02.2012 | 19:02 Uhr
+						span.sub 20.02.2012 | 19:02 Uhr
 						h1 Long Headlinetext /
-						p Lorem
+						p Es gibt im Moment in diese Mannschaft, oh, einige Spieler vergessen ihnen Profi was sie sind. Ich lese nicht sehr viele Zeitungen, aber ich habe gehört viele Situationen. Erstens: wir haben nicht offensiv gespielt. Es gibt keine deutsche Mannschaft spielt offensiv und die Name offensiv wie Bayern.
+						p Letzte Spiel hatten wir in Platz drei Spitzen: Elber, Jancka und dann Zickler. Wir müssen nicht vergessen Zickler. Zickler ist eine Spitzen mehr, Mehmet eh mehr Basler. Ist klar diese Wörter, ist möglich verstehen, was ich hab gesagt? Danke.
+						figure 
+							blockquote Ein Trainer ist nicht ein Idiot! Ein Trainer sei sehen was passieren in Platz.
+							footer  - Trapattoni '98
+						p Offensiv, offensiv ist wie machen wir in Platz. Zweitens: ich habe erklärt mit diese zwei Spieler: nach Dortmund brauchen vielleicht Halbzeit Pause. Ich habe auch andere Mannschaften gesehen in Europa nach diese Mittwoch. Ich habe gesehen auch zwei Tage die Training.
+						.img-left
+							img(alt="opera", title="opera", src="static/img/image1.jpg")
+							br
+							span.sub &copy; Lorempixel.com
+						p Ich habe fertig! . . . wenn es gab Fragen, ich kann Worte wiederholen... Es gibt im Moment in diese Mannschaft, oh, einige Spieler vergessen ihnen Profi was sie sind, Ich lese nicht sehr viele Zeitungen, aber ich habe gehört viele Situationen. Erstens: wir haben nicht offensiv gespielt. Es gibt keine <a href="">deutsche Mannschaft</a> spielt offensiv und die Name offensiv wie Bayern. Letzte Spiel hatten wir in Platz drei Spitzen: Elber, Jancka und dann Zickler. Wir müssen nicht vergessen Zickler. Zickler ist eine Spitzen mehr, Mehmet eh mehr Basler. Ist klar diese Wörter, ist Wörter, ist möglich verstehen, was ich hab gesagt? Danke. Offensiv, offensiv ist wie machen wir in Platz. Zweitens: ich habe erklärt mit diese zwei Spieler: nach Dortmund brauchen vielleicht Halbzeit Pause. Ich habe auch andere Mannschaften gesehen in Europa nach diese Mittwoch.
 
 					article
-						h1 Formular /
-						p Lorem
+						h1.underline Formular /
+						form
+							.form-info Felder mit einem * sind Pflichtfelder
+							.form-error Bitte überprüfen Sie Ihre Eingabe
+							label Name*
+								input.form-name(type="text", required, onblur="javascript:textvalidate();")
+							label E-Mail*
+								input.form-mail(type="email", required, onblur="javascript:mailvalidate();")
+							label Telefon
+								input.form-number(type="number", onblur="javascript:numbervalidate();")
+							label Kommentar*
+								textarea.form-textarea(required, rows="4", maxlength="500", onblur="javascript:lengthvalidate();")
+							input.button.form-submit(type="submit", value="Abschicken")
 
 					article
-						h1 Leistungsumfang /
-						p Lorem
+						h1.underline Leistungsumfang /
+						.row
+							.column.column-6
+								ol
+									li Lorem
+									li Ipsum
+									li Dolor
+									li Sit
+							.column.column-6
+								ul
+									li Exozet: GmbH
+									li Mitarbeiter ca. 150
+									li Groups: Games, Interact, Effects
+									li Gründung: 1996
 
 				#sidebar.column.column-3
 					.module
-						h1 Interne Linkliste
+						h2 Interne Linkliste
 						ul
 							li
 								a(href="") <i class="fa fa-chevron-right"></i> Link Nummer 1
@@ -48,23 +81,28 @@ html
 							li
 								a(href="") <i class="fa fa-chevron-right"></i> Link Nummer 3
 					.module
-						h1 Kontakt
+						h2 Kontakt
 						address 
-							|Exozet Berlin GmbH <br>
-							|Platz der Luftbrücke 4-6 <br>
+							|Exozet Berlin GmbH
+							br
+							|Platz der Luftbrücke 4-6
+							br
 							|12101 Berlin
 						<br>
 						address 
-							| <i class="fa fa-phone"></i> Tel.: +49 (0)30 24 65 60 - 0 <br>
-							| <i class="fa fa-envelope-o"></i> E-Mail: 
-							a(href="mailto:info@exozet.com") info@exozet.com
+							i.fa.fa-phone  Tel.: +49 (0)30 24 65 60 - 0
+							br
+							i.fa.fa-envelope-o   E-Mail: 
+							a(href="mailto:info@exozet.com")  info@exozet.com
 						
 					.module
-						h1 Image Teaser
+						h2 Image Teaser
 						.teaser
 							img(alt="image teaser", title="image teaser", src="static/img/imageteaser.jpg")
 							p Es gibt im Moment in diese Mannschaft, oh einige Spieler!
 							a.button(href="") Mehr lesen
+
+			.clear
 
 			footer
 				.copyright &copy; exozet 2014
@@ -78,3 +116,6 @@ html
 						li |
 						li
 							a(href="") Impressum
+
+		script(type='text/javascript', src='static/js/jquery.min.js')
+		script(type='text/javascript', src='static/js/master.min.js')

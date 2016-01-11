@@ -3,14 +3,18 @@
    ========================================================================== */
 
 #maincontainer {
-    height: 100%;
     margin: 0 auto;
     padding: 10px 30px;
     clear: both;
     max-width: 1000px;
     box-shadow: 0 0 10px $mediumgrey;
     background-color: $white;
+    min-height: 100%;
 }
 
-/* =language-menu
+/* =other
 -----------------------------------------------------------------------------*/
+
+.clear {
+	clear: both;
+}

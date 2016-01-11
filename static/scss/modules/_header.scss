@@ -3,15 +3,29 @@
    ========================================================================== */
 
 	header {
+
 		.logo, nav, nav ul, nav ul li {
 			display: inline;
 		}
 		nav {
 			float: right;
+			@include breakpoint(baby) {
+				float: none;
+				display: block;
+				text-align: center;
+			}
+
 		}
 
-		.logo img {
-			height: 30px;
+		.logo {
+			img {
+				height: 30px;
+			}
+			@include breakpoint(baby) {
+				display: block;
+				text-align: center;
+			}
+
 		}
 
 		&::before {
@@ -26,8 +40,13 @@
 
 		position: relative;
 		box-sizing: border-box;
-		height: 100px;
 		padding: 35px 0;
+		margin-bottom: 20px;
 		line-height: 30px;
 		border-bottom: 1px solid $mediumgrey;
+
+		@include breakpoint(baby) {
+			padding: 10px 0;
+		}
+
 	}

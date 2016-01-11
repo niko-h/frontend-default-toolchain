@@ -1,32 +1,49 @@
 // Main
 
-$( document ).ready(function() {
-	$(window).bind('scroll', function() {
-		var navHeight = $( '.headlogo' ).height();
-		if ($(window).scrollTop() > navHeight-50) {
-			$('.head, .main .content').addClass('fixed');
-		}
-		else {
-			$('.head, .main .content').removeClass('fixed');
-		}
-	});
-});
-// Lang cookie
+// Validators
 
-$( document ).ready(function() {
-	
-	$('.lang-link.selected').removeClass('selected');
-	$('.lang-link[data-lang="'+$.cookie('LANGUAGE')+'"]').addClass('selected');
+hideerror = function () {
+	$('.form-error').css('display', 'none');
+    $('#form-submit').removeAttr('disabled');
+}
 
-	$('.lang-link').click(function(e) {
-		e.preventDefault();
+showerror = function () {
+	$('.form-error').css('display', 'block');
+    $('#form-submit').attr('disabled', 'disabled');
+}
 
-		var newLang = $(this).data('lang');
-		$.removeCookie('LANGUAGE');
-		$.cookie('LANGUAGE', newLang);
+mailvalidate = function () {
+    str = $('.form-mail').val();
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(str)) { 
+    	hideerror();
+    } else {
+    	showerror();
+    }
+}
 
-		location.reload();
+numbervalidate = function () {
+	str = $('.form-number').val();
+    if (/^\d+$/.test(str) || str.length === 0 ) { 
+    	hideerror();
+    } else {
+    	showerror();
+    }
+}
 
-	});
+textvalidate = function () {
+	str = $('.form-name').val();
+    if (/^[a-zA-Z]*$/.test(str)) { 
+    	hideerror();
+    } else {
+    	showerror();
+    }
+}
 
-});
+lengthvalidate = function () {
+	str = $('.form-textarea').val();
+    if (str.length < 501) { 
+    	hideerror();
+    } else {
+    	showerror();
+    }
+}
