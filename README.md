@@ -1,2 +1,7 @@
-# gjfcs
-grunt-jade-foundation-custom-setup
+# default-frontend-toolchain
+
+using:
+- grunt
+- jade
+- scss
+- compass
