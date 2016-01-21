@@ -3,5 +3,5 @@
 using:
 - grunt
 - jade
-- scss
+- scss -> customized setup of J-SMACSS
 - compass
